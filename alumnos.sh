@@ -36,7 +36,7 @@ echo "Ingrese la Ci del alumno"
 	read grupo
 	
 	Nlinea = grep "$Ci" /grupos/*
-	sed '$nlinea s/*/$Ci - $nombre - $apellido - $telefono/' /gupos/"$grupo".txt
+	sed '$nlinea s/*/$Ci - $nombre - $apellido' /gupos/"$grupo".txt
 	sed '$nlinea s/*/$Ci - $nombre - $apellido - $telefono/' alumnos.txt
 esac
 do 
