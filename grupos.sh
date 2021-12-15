@@ -18,9 +18,9 @@ echo "añadir otro?"
 echo "1-si"
 echo "2-no"
 read x
-case x in
+case $x in
 1);;
-2) ox = 1
+2) $ok = 1
 cat Atemp.txt | sort >> "grupo $gname".txt;;
 rm Atemp.txt
 sudo chown Admin "grupo $gname".txt
