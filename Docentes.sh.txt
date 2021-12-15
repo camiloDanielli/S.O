@@ -1,1 +1,34 @@
-decentes
+rep=1
+echo "Que desea hacer?"
+echo "1-crear docente"
+echo "2-borrar docente"
+
+1)
+echo "creará un nuevo docento"
+
+echo "Ingrese la Ci del docente"
+	read Ci
+	echo "nombre:"
+	read nombre
+	echo "apellido:"
+	read apellido
+	echo "telefono:"
+	read telefono 
+  echo "Ingrese la materia que dictará"
+  read materia
+
+	
+	echo "$Ci - $nombre - $apellido - $materia" >>  /gupos/"$grupo".txt
+	echo "$Ci - $nombre - $apellido - $telefono - $materia" >> docentes.txt;;
+  echo "Docente creado"
+
+2)
+  echo "Borrara al  docente"
+  echo "Ingrese su Ci"
+  read Ci
+  sed -i "/$ci/d" /grupos/*
+  echo "Docente eliminado"
+
+do 
+done
+exit
